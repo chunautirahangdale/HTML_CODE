@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .parent{
+            border: 2px solid navy;
+            width:100vw ;
+            height:400px ;
+
+        }
+        .parent:hover .child{
+           margin-left:90% ;
+           border-radius: 54%;
+           align-items:center ;
+           justify-content:center;
+           text-align: center;
+
+        }
+          .child{
+            height: 90px; 
+            width:100px ;
+            transition-duration:2s ;
+          }
+        #one{
+            background-color:rgb(77, 77, 29);
+            transition-timing-function: linear;
+        }
+        #two{
+            background-color:rgb(10, 46, 10) ;
+           transition-timing-function: ease-in ;
+        }
+        #three{
+       background-color:rgb(27, 3, 27) ;
+       transition-timing-function: ease-out;
+        }
+        #four{
+         background-color:rgb(17, 17, 247);   
+         transition-timing-function:ease-in-out ;   
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="child" id="one">linear</div>
+    <div class="child"id="two">Ease in </div>
+    <div class="child"id="three">Ease out</div>
+    <div class="child"id="four"> Ease in out</div>
+    </div>
+</body>
+</html>
