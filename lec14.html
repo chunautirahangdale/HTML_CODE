@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0px;
+            font-size: large;
+
+        }
+    
+        .navbar{
+
+            background-color: rgb(22, 21,20);
+            display: flex;
+            height: 56px;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            padding: 0px 24px;
+            font-size: larger;
+        }
+        .inner-navbar{
+            display: flex;
+            justify-content: space-evenly;
+            width: 350px;
+            color: aliceblue;
+
+
+        }
+        .navlink{
+            color: chocolate;
+        }
+        #b{
+            color: aliceblue;
+            background-color: chocolate;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        @media screen and (max-width:600px) {
+            .navbar{
+                display: flex;
+                flex-direction: column;
+                height: 150px; 
+            
+            }
+            .inner-navbar{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navlink" ><b>CodingThinkers</b></div>
+        <div class="inner-navbar" >
+            <div class="sub">Learn</div>
+            <div class="sub">Practice</div>
+            <div class="sub">Get hired</div>
+            <div class="sub">IDE</div>
+        </div>
+            <div class="login"><button id="b"><b>LOGIN</b></button></div>
+
+    
+    </div>
+    
+</body>
+</html>
