@@ -1,0 +1,18 @@
+body{
+  background-color:green ;  
+}
+div{
+    height:100px ;
+    width:100px ;
+     background-color:red ;
+}
+@media screen and (max-width:300px){
+    body{
+      background-color:blue ;  
+    }
+    div{
+      width:100px ;
+      height: 100px;
+       border-radius:50% ; 
+    }
+}
