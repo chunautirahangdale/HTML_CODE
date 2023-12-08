@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexproperty</title>
+    <style>
+       .child_main{ 
+        width: 50px;
+        height: 50px;
+        
+       } 
+     #parent{
+         border: 2px solid ; 
+         width: 90vw;
+         height: 600px;
+       display:flex ;
+        align-items:center ;
+       justify-content:center;     
+        /* flex-direction:row;  */
+          /* flex-wrap: wrap ; */
+           
+     }
+     #one{
+        background-color: darkred;
+        /* flex-basis:200px ; */
+        flex-grow:2 ;
+     }
+    #two{
+        background-color:blue ;
+        flex-grow:1 ;
+    }
+    #three{
+    background-color:red ;
+    }
+    #four{
+      background-color:black ;  
+    }
+    #five{
+        background-color:green ;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- flex -->
+    <div id="parent">
+      <div class="child_main"id="one">1</div>  
+      <div class="child_main"id="two">2</div>  
+      <div class="child_main"id="three">3</div>  
+      <div class="child_main"id="four">4</div>  
+      <div class="child_main"id="five">5</div>  
+        
+    </div>
+</body>
+</html>
