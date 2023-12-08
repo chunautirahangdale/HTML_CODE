@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bollraound</title>
+    <style>
+     div{
+        height: 200px;
+        width: 200px;
+      background:linear-gradient(pink,navy) ; 
+      border-radius:50%;
+         animation-name: measure ;
+        animation-duration:900ms ;
+        animation-direction: alternate;
+        animation-iteration-count:infinite ;
+     }
+     @keyframes measure{
+        0%{
+            transform:translateY(0px) ;
+          background-color: black;
+
+        }
+        100%{
+            transform:translateY(450px)rotateX(40deg) ;
+           background-color: blue; 
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
