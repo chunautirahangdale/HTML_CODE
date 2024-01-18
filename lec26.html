@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            
+            animation-name: run;
+            animation-duration: 10s;
+            animation-iteration-count:infinite;
+           
+        }
+        @keyframes run {
+            0%{
+               transform: translateX(0);
+            }                                           
+            50%{
+                transform:translatex(750px);
+              
+            }
+            75%{
+                transform: rotateY(180deg);
+                /* transform-style: preserve-3d; */
+            }
+            100%{
+                transform: rotatey(180deg) translateX(750px);
+
+                
+        }}
+      img{
+        height: 200px;
+        width:500px ;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20/Highlights/pc/i20_Modelpc.png" alt="">
+    </div>
+</body>
+</html>
+
